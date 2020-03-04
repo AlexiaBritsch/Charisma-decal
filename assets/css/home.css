@@ -20,12 +20,13 @@ body {
    float: left;
    padding-left: 1%;
    height: 6vh;
-
+  padding-top: .5%;
  }
 
 .topnav {
   background-color: #FFF;
   overflow: hidden;
+  padding-right: 2%;
 }
 
 /* Style the links inside the navigation bar */
@@ -46,7 +47,10 @@ body {
 }
 
 /* Add an active class to highlight the current page */
-
+.topnav a.current{
+  font-weight: 900;
+  text-decoration: underline;
+}
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {

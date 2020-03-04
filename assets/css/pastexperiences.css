@@ -6,24 +6,25 @@ body {
   height: 100vh;
   color: #3A3737;
   background-color: #FFF;
+  overflow-x: hidden;
 }
 
 /* Add a black background color to the top navigation
  */
 
- .navbar {
-   background-color: #FFF;
-   overflow: hidden;
-   height: 7vh;
+.navbar {
+  background-color: #FFF;
+  overflow: hidden;
+  height: 7vh;
+  padding-right: 2%;
+}
 
- }
-
- .logo img {
-   float: left;
-   padding-left: 1%;
-   height: 6vh;
-
- }
+.logo img {
+  float: left;
+  padding-left: 1%;
+  height: 6vh;
+  padding-top: .5%;
+}
 
 .topnav {
   background-color: #FFF;
@@ -48,7 +49,10 @@ body {
 }
 
 /* Add an active class to highlight the current page */
-
+.topnav a.current{
+  font-weight: 900;
+  text-decoration: underline;
+}
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -101,29 +105,34 @@ h1 {
 .bar img {
   height: 3.5vh;
   padding-left: 0.5%;
-
+  padding-bottom: 3%;
 }
 
 .exp {
-display: flex;
-flex-direction: column;
-top: 35%;
-padding-top: 1%;
-padding-bottom: 9%;
-text-align: center;
-align-items: center;
-height: 87vh;
-width: 130vh;
-position: absolute;
-background: #FFFFFF;
-box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
-left: 15%;
+  display: flex;
+  flex-direction: column;
+  /* top: 35%;
+  padding-top: 1%;
+  padding-bottom: 9%; */
+  text-align: center;
+  align-items: center;
+  /* height: 87vh;
+  width: 130vh; */
+  max-width: 60%;
+  /* position: absolute; */
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+  /* left: 15%; */
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5%;
 }
 
 .barr img {
   height: 2.4vh;
+  width: 100%;
   padding-bottom:4% ;
-
 }
 
 h2 {
@@ -160,11 +169,11 @@ h2 {
   padding-left: 15%;
 }
 
-.face{
+.face {
   padding-top: 38%;
 }
 
-.face1{
+.face1 {
   padding-top: 38%;
 }
 
@@ -174,39 +183,41 @@ h3 {
   font-size: 90%;
 }
 
-
-
-
 .footer {
-  height: 27vh;
-  width: 184vh;
+  position: relative;
+  /* height: 20vh; */
+  width: 100%;
   background-color: #4264DD;
-  top: 152%;
-  position: absolute;
+  bottom: 0px;
+  /* top: 255%; */
+  /* position: absolute; */
   align-items: center;
   text-align: center;
   color: #FFF;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h4 {
-  padding-bottom: 1%;
+  padding-top: 25px;
+  /* padding-bottom: 1%; */
   font-weight: bold;
 }
+
 .contacts{
   display: flex;
   flex-direction: row;
-  padding-left: 15%;
+  /* padding-left: 15%; */
 }
 
 .contact1{
-  padding-right: 28%;
-  font-size: 80%;
-
+  /* padding-right: 26%; */
+  width: 50%;
 }
 
 .contact2{
-  padding-left: 25%;
-  font-size: 80%;
+  /* padding-left: 22%; */
+  width: 50%;
 }
 
 .email img{
